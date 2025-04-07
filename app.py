@@ -138,7 +138,9 @@ if find_button:
         with result_placeholder.container():
             st.error("Could not find a match. Is the RAL data loaded correctly?")
 
+
+
 # Optional: Display the sample dataset used
-st.markdown("---")
-with st.expander("Show Sample RAL Data Used"):
-    st.dataframe(ral_df)
+#st.markdown("---")
+#with st.expander("Show Sample RAL Data Used"):
+#    st.dataframe(ral_df)
