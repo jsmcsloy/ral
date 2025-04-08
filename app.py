@@ -112,12 +112,12 @@ if find_button:
 
     if closest_ral is not None:
         ral_code = closest_ral['RAL']
-        ral_name = closest_ral.get('Name', 'N/A')
+        ral_name = closest_ral.get('Name')
         ral_lab = (closest_ral['L'], closest_ral['a'], closest_ral['b'])
         ral_hex = closest_ral.get('Hex', '#FFFFFF')
 
         with result_placeholder.container():
-            st.success(f"Found closest match: **RAL {ral_code} ({ral_name})**")
+            st.success(f"Found closest match: RAL {ral_code} ")
             st.metric("Calculated Delta E (ΔE*₇₆)", f"{delta_e:.2f}")
             st.markdown("---")
             st.markdown(f"**RAL {ral_code} Details:**")
